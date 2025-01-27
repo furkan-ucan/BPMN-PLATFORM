@@ -1,0 +1,563 @@
+{
+  "rules": [
+    {
+      "name": "Frontend Public Rules",
+      "patterns": [
+        "**/frontend/public/**/*",
+        "**/frontend/public/assets/**/*",
+        "**/frontend/public/index.html",
+        "**/frontend/public/manifest.json"
+      ],
+      "technologies": {
+        "web": ["HTML5", "PWA"],
+        "assets": ["Images", "Fonts", "Icons"]
+      }
+    },
+    {
+      "name": "Frontend Source Rules",
+      "patterns": [
+        "**/frontend/src/**/*.ts",
+        "**/frontend/src/**/*.tsx",
+        "**/frontend/src/**/*.js",
+        "**/frontend/src/**/*.jsx"
+      ],
+      "technologies": {
+        "framework": ["React.js"],
+        "typescript": ["TypeScript"],
+        "bundler": ["Webpack", "Vite"],
+        "compiler": ["Babel"]
+      }
+    },
+    {
+      "name": "Frontend API Rules",
+      "patterns": [
+        "**/frontend/src/api/**/*.ts",
+        "**/frontend/src/api/endpoints/**/*.ts",
+        "**/frontend/src/api/interceptors/**/*.ts",
+        "**/frontend/src/services/**/*.ts"
+      ],
+      "technologies": {
+        "http": ["Axios"],
+        "caching": ["React Query", "SWR"],
+        "mocking": ["MSW", "Mirage JS"]
+      }
+    },
+    {
+      "name": "Frontend Component Rules",
+      "patterns": [
+        "**/frontend/src/components/**/*.tsx",
+        "**/frontend/src/components/common/**/*.tsx",
+        "**/frontend/src/components/layout/**/*.tsx",
+        "**/frontend/src/components/forms/**/*.tsx",
+        "**/frontend/src/components/tables/**/*.tsx",
+        "**/frontend/src/components/charts/**/*.tsx"
+      ],
+      "technologies": {
+        "ui": ["Material-UI", "Ant Design"],
+        "forms": ["React Hook Form", "Formik"],
+        "validation": ["Yup", "Zod"],
+        "charts": ["Chart.js", "Recharts"]
+      }
+    },
+    {
+      "name": "Frontend Container Rules",
+      "patterns": [
+        "**/frontend/src/containers/**/*.tsx",
+        "**/frontend/src/containers/dashboards/**/*.tsx",
+        "**/frontend/src/containers/processes/**/*.tsx",
+        "**/frontend/src/containers/tasks/**/*.tsx",
+        "**/frontend/src/containers/reports/**/*.tsx",
+        "**/frontend/src/containers/auth/**/*.tsx",
+        "**/frontend/src/containers/settings/**/*.tsx"
+      ],
+      "technologies": {
+        "routing": ["React Router"],
+        "auth": ["JWT", "OAuth2"],
+        "analytics": ["Google Analytics", "Segment"]
+      }
+    },
+    {
+      "name": "Frontend State Management Rules",
+      "patterns": [
+        "**/frontend/src/redux/**/*.ts",
+        "**/frontend/src/context/**/*.tsx",
+        "**/frontend/src/hooks/**/*.ts"
+      ],
+      "technologies": {
+        "state": ["Redux Toolkit", "Zustand"],
+        "middleware": ["Redux Thunk", "Redux Saga"],
+        "context": ["React Context API"],
+        "hooks": ["Custom Hooks"]
+      }
+    },
+    {
+      "name": "Frontend Style Rules",
+      "patterns": [
+        "**/frontend/src/assets/styles/**/*.scss",
+        "**/frontend/src/assets/themes/**/*.ts",
+        "**/frontend/src/assets/variables.scss"
+      ],
+      "technologies": {
+        "styling": ["SCSS", "CSS Modules"],
+        "cssInJs": ["Styled Components", "Emotion"],
+        "theming": ["Theme Provider", "CSS Variables"]
+      }
+    },
+    {
+      "name": "Frontend Internationalization Rules",
+      "patterns": [
+        "**/frontend/src/i18n/**/*.ts",
+        "**/frontend/src/i18n/locales/**/*.json",
+        "**/frontend/src/i18n/translations/**/*.json"
+      ],
+      "technologies": {
+        "i18n": ["react-i18next", "i18next"],
+        "formatting": ["Intl", "date-fns"]
+      }
+    },
+    {
+      "name": "Frontend Test Rules",
+      "patterns": [
+        "**/frontend/src/tests/**/*.test.ts",
+        "**/frontend/src/tests/**/*.spec.ts",
+        "**/frontend/src/tests/unit/**/*.ts",
+        "**/frontend/src/tests/integration/**/*.ts",
+        "**/frontend/src/tests/e2e/**/*.ts"
+      ],
+      "technologies": {
+        "testing": ["Jest", "React Testing Library"],
+        "e2e": ["Cypress", "Playwright"],
+        "coverage": ["Istanbul"],
+        "mocking": ["Jest Mock", "Testing Library User Event"]
+      }
+    },
+    {
+      "name": "Frontend Config Rules",
+      "patterns": [
+        "**/frontend/src/config/**/*.ts",
+        "**/frontend/.env*",
+        "**/frontend/src/config/constants.ts",
+        "**/frontend/src/config/settings.ts"
+      ],
+      "technologies": {
+        "config": ["dotenv", "cross-env"],
+        "types": ["TypeScript"],
+        "bundler": ["Webpack", "Vite"]
+      }
+    },
+    {
+      "name": "Frontend Utils Rules",
+      "patterns": [
+        "**/frontend/src/utils/**/*.ts",
+        "**/frontend/src/utils/formatters.ts",
+        "**/frontend/src/utils/validators.ts",
+        "**/frontend/src/utils/helpers.ts"
+      ],
+      "technologies": {
+        "utils": ["Lodash", "date-fns"],
+        "validation": ["Yup", "Zod"],
+        "formatting": ["Numeral.js", "Moment.js"]
+      }
+    },
+    {
+      "name": "Backend API Rules", 
+      "patterns": [
+        "**/backend/api/**/*.ts",
+        "**/backend/api/controllers/**/*.ts",
+        "**/backend/api/middleware/**/*.ts",
+        "**/backend/api/validators/**/*.ts",
+        "**/backend/api/routes/**/*.ts",
+        "**/backend/api/views/**/*.ts",
+        "**/backend/api/utils/**/*.ts"
+      ],
+      "technologies": {
+        "framework": ["NestJS", "Express.js"],
+        "validation": ["class-validator", "Joi"],
+        "documentation": ["Swagger/OpenAPI"],
+        "security": ["Helmet.js", "CORS"]
+      }
+    },
+    {
+      "name": "Backend Core Rules",
+      "patterns": [
+        "**/backend/core/**/*.ts",
+        "**/backend/core/bpmn/**/*.ts",
+        "**/backend/core/workflow/**/*.ts",
+        "**/backend/core/forms/**/*.ts",
+        "**/backend/core/rules/**/*.ts",
+        "**/backend/core/integrations/**/*.ts",
+        "**/backend/core/scheduler/**/*.ts"
+      ],
+      "technologies": {
+        "processEngine": ["BPMN.js", "Camunda"],
+        "workflowEngine": ["Node-RED", "Temporal"],
+        "formBuilder": ["JSON Schema", "React JSON Schema Form"],
+        "ruleEngine": ["Drools", "Easy Rules"],
+        "scheduler": ["node-cron", "Bull"]
+      }
+    },
+    {
+      "name": "Backend Features Rules",
+      "patterns": [
+        "**/backend/features/**/*.ts",
+        "**/backend/features/auth/**/*.ts",
+        "**/backend/features/processes/**/*.ts",
+        "**/backend/features/tasks/**/*.ts",
+        "**/backend/features/forms/**/*.ts",
+        "**/backend/features/reports/**/*.ts",
+        "**/backend/features/notifications/**/*.ts",
+        "**/backend/features/hooks/**/*.ts"
+      ],
+      "technologies": {
+        "auth": ["Passport.js", "JWT"],
+        "processManagement": ["Camunda", "Activiti"],
+        "taskManagement": ["Bull Queue", "Agenda"],
+        "reporting": ["PDFKit", "ExcelJS"],
+        "notifications": ["Nodemailer", "Socket.io"]
+      }
+    },
+    {
+      "name": "Backend Infrastructure Rules",
+      "patterns": [
+        "**/backend/infrastructure/**/*.ts",
+        "**/backend/infrastructure/database/**/*.ts",
+        "**/backend/infrastructure/storage/**/*.ts",
+        "**/backend/infrastructure/cache/**/*.ts",
+        "**/backend/infrastructure/queue/**/*.ts",
+        "**/backend/infrastructure/messaging/**/*.ts",
+        "**/backend/infrastructure/search/**/*.ts"
+      ],
+      "technologies": {
+        "database": ["MongoDB", "PostgreSQL"],
+        "orm": ["TypeORM", "Mongoose"],
+        "cache": ["Redis", "Memcached"],
+        "queue": ["RabbitMQ", "Bull"],
+        "messaging": ["Apache Kafka", "WebSocket"],
+        "search": ["Elasticsearch"],
+        "storage": ["MinIO", "AWS S3"]
+      }
+    },
+    {
+      "name": "Backend Integration Rules",
+      "patterns": [
+        "**/backend/integration/**/*.ts",
+        "**/backend/integration/email/**/*.ts",
+        "**/backend/integration/notification/**/*.ts",
+        "**/backend/integration/payment/**/*.ts",
+        "**/backend/integration/webhooks/**/*.ts",
+        "**/backend/integration/external-apis/**/*.ts"
+      ],
+      "technologies": {
+        "email": ["Nodemailer", "SendGrid"],
+        "notification": ["Firebase", "OneSignal"],
+        "payment": ["Stripe", "PayPal"],
+        "webhooks": ["Webhook-Node", "Axios"],
+        "apiIntegration": ["REST", "GraphQL"]
+      }
+    },
+    {
+      "name": "Backend Monitoring Rules",
+      "patterns": [
+        "**/backend/monitoring/**/*.ts",
+        "**/backend/monitoring/logging/**/*.ts",
+        "**/backend/monitoring/metrics/**/*.ts",
+        "**/backend/monitoring/analytics/**/*.ts",
+        "**/backend/monitoring/alerts/**/*.ts",
+        "**/backend/monitoring/dashboards/**/*.ts"
+      ],
+      "technologies": {
+        "logging": ["Winston", "Morgan"],
+        "metrics": ["Prometheus", "StatsD"],
+        "monitoring": ["Grafana", "New Relic"],
+        "tracing": ["Jaeger", "OpenTelemetry"],
+        "analytics": ["Elastic APM"]
+      }
+    },
+    {
+      "name": "Backend Security Rules",
+      "patterns": [
+        "**/backend/security/**/*.ts",
+        "**/backend/security/encryption/**/*.ts",
+        "**/backend/security/authentication/**/*.ts",
+        "**/backend/security/authorization/**/*.ts",
+        "**/backend/security/audit/**/*.ts",
+        "**/backend/security/rate-limiting/**/*.ts"
+      ],
+      "technologies": {
+        "encryption": ["bcrypt", "crypto"],
+        "authentication": ["JWT", "OAuth2"],
+        "authorization": ["RBAC", "ABAC"],
+        "audit": ["Winston Audit", "Audit.js"],
+        "security": ["Helmet.js", "rate-limiter-flexible"]
+      }
+    },
+    {
+      "name": "Backend Shared Rules",
+      "patterns": [
+        "**/backend/shared/**/*.ts",
+        "**/backend/shared/constants/**/*.ts",
+        "**/backend/shared/utils/**/*.ts",
+        "**/backend/shared/errors/**/*.ts",
+        "**/backend/shared/interfaces/**/*.ts",
+        "**/backend/shared/decorators/**/*.ts"
+      ],
+      "technologies": {
+        "utils": ["Lodash", "date-fns"],
+        "validation": ["class-validator"],
+        "types": ["TypeScript"],
+        "testing": ["Jest"]
+      }
+    },
+    {
+      "name": "Backend Test Rules",
+      "patterns": [
+        "**/backend/tests/**/*.ts",
+        "**/backend/tests/unit/**/*.ts",
+        "**/backend/tests/integration/**/*.ts",
+        "**/backend/tests/e2e/**/*.ts",
+        "**/backend/tests/performance/**/*.ts"
+      ],
+      "technologies": {
+        "unitTesting": ["Jest", "Mocha"],
+        "e2eTesting": ["Supertest", "Cypress"],
+        "loadTesting": ["k6", "Artillery"],
+        "mocking": ["Jest Mock", "Sinon"]
+      }
+    },
+    {
+      "name": "Backend Deployment Rules",
+      "patterns": [
+        "**/backend/deployment/**/*.ts",
+        "**/backend/deployment/docker/**/*",
+        "**/backend/deployment/kubernetes/**/*",
+        "**/backend/deployment/ci_cd/**/*",
+        "**/backend/deployment/scripts/**/*"
+      ],
+      "technologies": {
+        "containerization": ["Docker"],
+        "orchestration": ["Kubernetes"],
+        "cicd": ["GitHub Actions", "Jenkins"],
+        "infrastructure": ["Terraform", "Ansible"]
+      }
+    },
+    {
+      "name": "Backend Documentation Rules",
+      "patterns": [
+        "**/backend/docs/**/*",
+        "**/backend/docs/api/**/*",
+        "**/backend/docs/architecture/**/*",
+        "**/backend/docs/guides/**/*",
+        "**/backend/docs/swagger/**/*"
+      ],
+      "technologies": {
+        "api": ["Swagger/OpenAPI"],
+        "docs": ["Markdown", "TypeDoc"],
+        "diagrams": ["PlantUML", "Mermaid"],
+        "wiki": ["VuePress", "Docusaurus"]
+      }
+    },
+    {
+      "name": "Backend Scripts Rules",
+      "patterns": [
+        "**/backend/scripts/**/*.ts",
+        "**/backend/scripts/migration/**/*.ts",
+        "**/backend/scripts/seeding/**/*.ts",
+        "**/backend/scripts/backup/**/*.ts",
+        "**/backend/scripts/dev-tools/**/*.ts"
+      ],
+      "technologies": {
+        "scripting": ["Node.js", "Shell"],
+        "migration": ["TypeORM Migrations"],
+        "seeding": ["TypeORM Seeding"],
+        "backup": ["MongoDB Tools", "pg_dump"]
+      }
+    },
+    {
+      "name": "Frontend Performance Rules",
+      "patterns": [
+        "**/frontend/src/performance/**/*.ts",
+        "**/frontend/src/optimizations/**/*.ts"
+      ],
+      "technologies": {
+        "performance": ["Web Vitals", "Lighthouse"],
+        "optimization": ["Code Splitting", "Tree Shaking"],
+        "monitoring": ["Performance API", "Analytics"],
+        "caching": ["Service Worker", "Browser Cache"]
+      }
+    },
+    {
+      "name": "Frontend Security Rules",
+      "patterns": [
+        "**/frontend/src/security/**/*.ts",
+        "**/frontend/src/encryption/**/*.ts"
+      ],
+      "technologies": {
+        "security": ["CSP", "XSS Protection"],
+        "encryption": ["Web Crypto API"],
+        "authentication": ["OAuth2 Client", "JWT Handler"],
+        "sanitization": ["DOMPurify", "Sanitize-HTML"]
+      }
+    },
+    {
+      "name": "Frontend Error Rules",
+      "patterns": [
+        "**/frontend/src/errors/**/*.ts",
+        "**/frontend/src/exceptions/**/*.ts"
+      ],
+      "technologies": {
+        "errorTracking": ["Sentry", "LogRocket"],
+        "errorBoundary": ["React Error Boundary"],
+        "monitoring": ["Error Tracking API"],
+        "reporting": ["Error Reports"]
+      }
+    },
+    {
+      "name": "Frontend PWA Rules",
+      "patterns": [
+        "**/frontend/src/pwa/**/*.ts",
+        "**/frontend/public/service-worker.js"
+      ],
+      "technologies": {
+        "pwa": ["Workbox", "Service Workers"],
+        "offline": ["IndexedDB", "Cache API"],
+        "push": ["Push API", "Notifications API"],
+        "install": ["Web App Manifest"]
+      }
+    },
+    {
+      "name": "Frontend Accessibility Rules",
+      "patterns": [
+        "**/frontend/src/a11y/**/*.ts",
+        "**/frontend/src/accessibility/**/*.ts"
+      ],
+      "technologies": {
+        "a11y": ["ARIA", "WCAG"],
+        "testing": ["Axe Core", "Pa11y"],
+        "tools": ["React-Axe", "Jest-Axe"],
+        "monitoring": ["A11y Monitoring"]
+      }
+    },
+    {
+      "name": "Version Control Rules",
+      "patterns": [
+        "**/.git/**/*",
+        "**/.gitignore",
+        "**/.gitattributes"
+      ],
+      "technologies": {
+        "vcs": ["Git"],
+        "hooks": ["Husky", "Lint-Staged"],
+        "commit": ["Commitlint", "Conventional Commits"],
+        "workflow": ["Git Flow", "Trunk Based"]
+      }
+    },
+    {
+      "name": "Development Rules",
+      "patterns": [
+        "**/.vscode/**/*",
+        "**/.idea/**/*",
+        "**/.editorconfig"
+      ],
+      "technologies": {
+        "editor": ["VSCode", "WebStorm"],
+        "formatting": ["Prettier", "EditorConfig"],
+        "debugging": ["Chrome DevTools", "React DevTools"],
+        "productivity": ["ESLint", "TypeScript"]
+      }
+    },
+    {
+      "name": "Frontend Analytics Rules",
+      "patterns": [
+        "**/frontend/src/analytics/**/*.ts",
+        "**/frontend/src/tracking/**/*.ts"
+      ],
+      "technologies": {
+        "analytics": ["Google Analytics 4", "Mixpanel"],
+        "tracking": ["Hotjar", "FullStory"],
+        "metrics": ["Custom Events", "User Flow"],
+        "reporting": ["Data Studio", "Custom Dashboards"]
+      }
+    },
+    {
+      "name": "Frontend Real-time Rules",
+      "patterns": [
+        "**/frontend/src/realtime/**/*.ts",
+        "**/frontend/src/websocket/**/*.ts"
+      ],
+      "technologies": {
+        "websocket": ["Socket.io-client", "WebSocket API"],
+        "streaming": ["Server-Sent Events", "WebRTC"],
+        "sync": ["Real-time Database", "Live Updates"],
+        "presence": ["User Status", "Online Indicators"]
+      }
+    },
+    {
+      "name": "Frontend SEO Rules",
+      "patterns": [
+        "**/frontend/src/seo/**/*.ts",
+        "**/frontend/public/robots.txt",
+        "**/frontend/public/sitemap.xml"
+      ],
+      "technologies": {
+        "seo": ["Next.js SEO", "React Helmet"],
+        "metadata": ["Open Graph", "Twitter Cards"],
+        "sitemap": ["Dynamic Sitemap", "XML Sitemap"],
+        "analytics": ["Search Console", "SEO Metrics"]
+      }
+    },
+    {
+      "name": "Frontend Media Rules",
+      "patterns": [
+        "**/frontend/src/media/**/*.ts",
+        "**/frontend/src/video/**/*.ts",
+        "**/frontend/src/audio/**/*.ts"
+      ],
+      "technologies": {
+        "video": ["Video.js", "React Player"],
+        "audio": ["Howler.js", "Web Audio API"],
+        "streaming": ["HLS.js", "DASH.js"],
+        "optimization": ["Media Compression", "Lazy Loading"]
+      }
+    },
+    {
+      "name": "Frontend Print Rules",
+      "patterns": [
+        "**/frontend/src/print/**/*.ts",
+        "**/frontend/src/pdf/**/*.ts"
+      ],
+      "technologies": {
+        "pdf": ["PDF.js", "jsPDF"],
+        "print": ["Print Stylesheets", "Print Preview"],
+        "export": ["Excel Export", "CSV Export"],
+        "rendering": ["Print Layout", "Page Breaks"]
+      }
+    },
+    {
+      "name": "Frontend Collaboration Rules",
+      "patterns": [
+        "**/frontend/src/collaboration/**/*.ts",
+        "**/frontend/src/shared/**/*.ts"
+      ],
+      "technologies": {
+        "sharing": ["Shared State", "Collaborative Editing"],
+        "presence": ["User Presence", "Cursor Tracking"],
+        "comments": ["Thread Comments", "Annotations"],
+        "notifications": ["Real-time Updates", "Activity Feed"]
+      }
+    }
+  ],
+  "ignore": [
+    "**/node_modules/**",
+    "**/dist/**",
+    "**/build/**",
+    "**/coverage/**",
+    "**/.git/**",
+    "**/*.log",
+    "**/backend/logs/**/*",
+    "**/frontend/.cache/**",
+    "**/frontend/build/**",
+    "**/tmp/**",
+    "**/.DS_Store",
+    "**/thumbs.db"
+  ]
+}
