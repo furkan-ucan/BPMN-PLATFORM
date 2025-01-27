@@ -1,0 +1,69 @@
+{
+  "[javascript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features",
+    "editor.tabSize": 2
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features",
+    "editor.tabSize": 2
+  },
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[yaml]": {
+    "editor.defaultFormatter": "vscode.json-language-features",
+    "editor.tabSize": 2
+  },
+  "[markdown]": {
+    "editor.defaultFormatter": "vscode.markdown-language-features",
+    "editor.wordWrap": "on"
+  },
+
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "typescript.enablePromptUseWorkspaceTsdk": true,
+
+  "eslint.validate": ["javascript", "typescript"],
+
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  },
+
+  "workbench.colorTheme": "Default Dark+",
+  "workbench.iconTheme": "material-icon-theme",
+
+  "files.autoSave": "onFocusChange",
+  "files.eol": "\n",
+
+  "cSpell.language": "en,tr",
+  "cSpell.words": [
+    "Altyapısı",
+    "Aşaması",
+    "Başlangıç",
+    "belirlendi",
+    "benimsendi",
+    "Doküman",
+    "dokümanı",
+    "göre",
+    "Hazırlık",
+    "İlerleme",
+    "Kapsamlı",
+    "Karşılaşılan",
+    "klasör",
+    "oluşturuldu",
+    "planlandı",
+    "Proje",
+    "Sorunlar",
+    "standardizasyonu",
+    "Tarihi",
+    "Tamamlanan",
+    "temizlendi",
+    "yapısı",
+    "Yönetimi",
+    "Furkan",
+    "Uçan",
+    "typeorm",
+    "pnpm"
+  ],
+  "cSpell.ignorePaths": ["docs/**/*.md", "LICENSE", "pnpm-lock.yaml"]
+}
